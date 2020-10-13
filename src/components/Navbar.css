@@ -1,0 +1,148 @@
+.navbar {
+    width: 100%;
+    background-color: #161616;
+    background-position: center;
+    height: 140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin-left: 48rem;
+    margin-right: auto;
+    height: 100%;
+}
+
+.menu-bars {
+    margin-right: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.nav-menu {
+    background-color: #fff;
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+}
+
+.nav-menu.active {
+    right: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 16px 0px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color:#93D500;
+    width: 100%;
+    height: 150%;
+}
+
+.nav-menu-items {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.navbar-toggle {
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.navbar-hello {
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.navbar-name {
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 78px;
+    margin-left: 50px;
+}
+
+.navbar-name h1 {
+    color: #93D500;
+}
+
+span {
+    margin-left: 16px;
+    color: #000000;
+    font-size: larger;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        width: 138%;
+        background-color: #161616;
+        background-position: center;
+        height: 140px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 138%;
+        background-color: #161616;
+        background-position: center;
+        height: 140px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: #161616;
+        background-position: center;
+        height: 140px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
