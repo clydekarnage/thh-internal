@@ -7,7 +7,7 @@ import './Navbar.css'
 import { IconContext } from 'react-icons'
 import Logo from '../img/logo.png'
 
-function Navbar() {
+function Navbar({ handleLogout }) {
     const [sidebar, setSidebar] = useState(false)
 
     const showSidebar = () => setSidebar(!sidebar)
@@ -46,6 +46,9 @@ function Navbar() {
                             </li>
                         )
                     })}
+                    <li>
+                        <button onClick={handleLogout}>Logout</button>
+                    </li>
                 </ul>
             </nav>
            </IconContext.Provider>
