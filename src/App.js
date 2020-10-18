@@ -10,6 +10,7 @@ import Touch from './pages/Touch';
 import Motion from './pages/Motion';
 import Virtual from './pages/Virtual';
 import Mobile from './pages/Mobile';
+import ThhApps from './pages/ThhApps'
 
 const Auth = () => {
   
@@ -104,6 +105,7 @@ function App() {
           <Route path="/motion" component={Motion} />
           <Route path="/virtual" component={Virtual} />
           <Route path="/mobile" component={Mobile} />
+          <Route path="/thhapps" component={ThhApps} />
         </Switch>
       </Router>
       ) : (

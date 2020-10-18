@@ -14,6 +14,13 @@
     
 }
 
+.hiring {
+    color: white;
+    background-color: #161616;
+    min-height: 100vh;
+    
+}
+
 .home .header {
     display: flex;
     align-items: flex-start;
@@ -36,8 +43,9 @@
 
 .content h1 {
     color: #fff;
-    font-size: 36px;
-    
+    font-size: 27px;
+    padding-bottom: 26px;
+    font-weight: 500;
 }
 
 .forms .header {
@@ -64,6 +72,7 @@
     height: 243px;
     width: 301px;
     margin-bottom: 20px;
+    padding: 33px;
 }
 
 
@@ -145,7 +154,9 @@
 
 .content1 h1 {
     color: #fff;
-    font-size: 36px;
+    font-size: 27px;
+    padding-bottom: 26px;
+    font-weight: 500;
     
 }
 
@@ -178,8 +189,9 @@
 
 .home-vg svg {
     height: 243px;
-    width: 213px;
+    width: 301px;
     margin-bottom: 20px;
+    padding: 33px;
 }
 
 .mobile .header {
@@ -239,7 +251,9 @@
 
 .content-form h1 {
     color: #fff;
-    font-size: 36px;
+    font-size: 27px;
+    padding-bottom: 26px;
+    font-weight: 500;
     
 }
 .form-hiring {
@@ -256,6 +270,7 @@
     height: 243px;
     width: 301px;
     margin-bottom: 20px;
+    padding: 33px;
 }
 
 .form-register {
@@ -275,15 +290,33 @@
 }
 
 
+.mobile .content-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px 40px;
+    border: thin;
+    column-gap: 3rem;
+    
+}
+
+.content-mobile h1 {
+    color: #fff;
+    font-size: 27px;
+    padding-bottom: 26px;
+    font-weight: 500;
+}
+
+
 /* LOGIN */
 
 button {
     border: none;
     outline: none;
     width: 50%;
-    padding: 15px 0;
+    padding: 9px 0;
     color: black;
-    font-weight: 1000;
+    font-weight: bolder;
     font-size: 22px;
     letter-spacing: 1px;
     background: #93D500;
@@ -301,11 +334,12 @@ button {
   }
 
   .logo-login img {
-    height: 215%;
+    height: 99%;
     /* position: absolute; */
     /* margin: auto; */
     display: block;
     margin: auto;
+    margin-top: 3%;
   }
   
   .login {
@@ -325,12 +359,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(
-      ellipse at left bottom,
-      rgb(243, 243, 243) 0%,
-      rgba(244, 243, 245, 0.9) 59%,
-      rgba(255, 255, 255, 0.9) 100%
-    );
+    background-color: #FFFFFF;
     box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
   }
   
@@ -339,7 +368,7 @@ button {
     margin-left: auto;
     margin-bottom: 45px;
     margin-top: 29px;
-    font-size: 39px;
+    font-size: 28px;
   }
 
 
@@ -521,6 +550,7 @@ button {
         height: 243px;
         width: 301px;
         margin-bottom: 20px;
+        padding: 33px;
     }
     .home .content {
         display: grid;
@@ -602,6 +632,7 @@ button {
         height: 243px;
         width: 301px;
         margin-bottom: 20px;
+        padding: 33px;
     }
     .home .content {
         margin: 40px 40px;
@@ -667,6 +698,7 @@ button {
         height: 243px;
         width: 301px;
         margin-bottom: 20px;
+        padding: 33px;
     }
     .home .content {
         margin: 40px 40px;

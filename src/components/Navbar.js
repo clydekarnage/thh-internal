@@ -31,11 +31,11 @@ function Navbar({ handleLogout }) {
                             </Link>
                     </li>
                     <li className='navbar-hello'>
-                        <h1>Hello,</h1>
+                        <h1>Hello</h1>
                     </li>
-                    <li className='navbar-name'>
+                    {/* <li className='navbar-name'>
                         <h1>Johndoe123</h1>
-                    </li>
+                    </li> */}
                     {SidebarData.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>
