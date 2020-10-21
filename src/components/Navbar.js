@@ -1,4 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
+import firebase from 'firebase'
+import { firebaseConfig } from '../auth/fire'
 import * as FaIcons from "react-icons/fa"
 import * as AiIcons from "react-icons/ai"
 import { Link } from 'react-router-dom'
@@ -9,8 +11,14 @@ import Logo from '../img/logo.png'
 
 function Navbar({ handleLogout }) {
     const [sidebar, setSidebar] = useState(false)
-
     const showSidebar = () => setSidebar(!sidebar)
+    const [currentUser, setCurrentUser] = useState()
+
+    useEffect(() => {
+        firebaseConfig.auth().onAuthStateChanged((user) => {
+            setCurrentUser(user)
+        })
+    }, [])
 
     return (
         <>
@@ -33,9 +41,9 @@ function Navbar({ handleLogout }) {
                     <li className='navbar-hello'>
                         <h1>Hello</h1>
                     </li>
-                    {/* <li className='navbar-name'>
-                        <h1>Johndoe123</h1>
-                    </li> */}
+                    <li className='navbar-name'>
+                        {currentUser &&<h1>{currentUser.email}</h1>}
+                    </li>
                     {SidebarData.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>

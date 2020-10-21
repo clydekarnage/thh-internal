@@ -322,8 +322,10 @@ button {
     background: #93D500;
     border-radius: 30px;
     cursor: pointer;
-    margin-left: 93px;
-    margin-right: 93px;
+    display: block;
+    /* margin-left: 93px; */
+    /* margin-right: 93px; */
+    margin: auto;
   }
 
   .logo-login {
@@ -451,6 +453,10 @@ button {
     width: 86px;
     padding: 8px 0;
     background: #3a2b58;
+  }
+
+  .btnContainer p {
+      text-align: center;
   }
 
 

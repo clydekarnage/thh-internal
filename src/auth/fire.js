@@ -1,6 +1,8 @@
-import firebase from 'firebase';
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
 
-var firebaseConfig = {
+var firebaseConfig = firebase.initializeApp({
     apiKey: "AIzaSyAFcoTPQ-TYUIz7hbtgexXxSI7chBH8XGE",
     authDomain: "thh-internal.firebaseapp.com",
     databaseURL: "https://thh-internal.firebaseio.com",
@@ -8,9 +10,11 @@ var firebaseConfig = {
     storageBucket: "thh-internal.appspot.com",
     messagingSenderId: "541135022369",
     appId: "1:541135022369:web:90fda22b58c26058ab3660"
-  };
+});
 
 
-  const fire = firebase.initializeApp(firebaseConfig);
+var db = firebaseConfig.firestore()
 
-  export default fire;
+// const fire = firebase.initializeApp(firebaseConfig);
+
+export { db, firebaseConfig };

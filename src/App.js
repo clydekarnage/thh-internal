@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import fire from './auth/fire'
+import { firebaseConfig } from './auth/fire'
 import Login from './auth/Login'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -12,9 +12,7 @@ import Virtual from './pages/Virtual';
 import Mobile from './pages/Mobile';
 import ThhApps from './pages/ThhApps'
 
-const Auth = () => {
-  
-}
+
 
 
 function App() {
@@ -38,7 +36,7 @@ function App() {
 
   const handleLogin = () => {
       clearErrors();
-      fire
+      firebaseConfig
           .auth()
           .signInWithEmailAndPassword(email, password)
           .catch(err => {
@@ -57,7 +55,7 @@ function App() {
 
   const handleSignup = () => {
       clearErrors();
-      fire
+      firebaseConfig
           .auth()
           .createUserWithEmailAndPassword(email, password)
           .catch(err => {
@@ -74,11 +72,11 @@ function App() {
   };
 
   const handleLogout = () => {
-      fire.auth().signOut();
+    firebaseConfig.auth().signOut();
   };
 
   const authListener = () => {
-      fire.auth().onAuthStateChanged(user => {
+    firebaseConfig.auth().onAuthStateChanged(user => {
           if(user){
               clearInputs();
               setUser(user);

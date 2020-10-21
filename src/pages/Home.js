@@ -31,7 +31,7 @@ function Home() {
                     <SiIcons.SiRiotgames />
                     <h1>VIRTUAL GAMES</h1>
                 </Link>
-                <Link to="/mobile" className="home-ma">
+                <Link to="/thhapps" className="home-ma">
                     <AiIcons.AiOutlineMobile />
                     <h1>MOBILE APPS</h1>
                 </Link>
